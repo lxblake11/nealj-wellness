@@ -2,6 +2,8 @@
   --orange: #ff8746;
   --orange-deep: #f36d32;
   --orange-soft: #fff0e7;
+  --orange-strong: #c9501a;
+  --orange-strong-deep: #b04413;
   --blue: #76c8df;
   --blue-deep: #52b6d2;
   --blue-soft: #eaf8fb;
@@ -50,7 +52,7 @@ img {
 .nav {
   position: relative;
   z-index: 20;
-  min-height: 118px;
+  min-height: 84px;
   padding: 0 var(--pad);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -60,15 +62,15 @@ img {
 }
 
 .brand {
-  width: 205px;
-  height: 108px;
+  width: 160px;
+  height: 76px;
   display: flex;
   align-items: center;
 }
 
 .brand img {
   width: auto;
-  height: 100px;
+  height: 64px;
   object-fit: contain;
 }
 
@@ -101,11 +103,11 @@ img {
 
 .book-button {
   justify-self: end;
-  padding: 16px 25px;
-  background: var(--orange);
+  padding: 13px 22px;
+  background: var(--orange-strong);
   color: var(--white);
   border-radius: 999px;
-  font-size: 21.6px;
+  font-size: 16px;
   font-weight: 600;
   transition:
     transform 350ms cubic-bezier(.16,1,.3,1),
@@ -114,7 +116,7 @@ img {
 
 .book-button:hover {
   transform: translateY(-2px);
-  background: var(--orange-deep);
+  background: var(--orange-strong-deep);
 }
 
 .kicker {
@@ -209,14 +211,14 @@ img {
 }
 
 .primary-button {
-  padding: 15px 20px;
+  padding: 18px 26px;
   display: inline-flex;
   align-items: center;
   gap: 35px;
   background: var(--ink);
   color: var(--white);
   border-radius: 999px;
-  font-size: 14.4px;
+  font-size: 17px;
   font-weight: 500;
   transition: transform 350ms cubic-bezier(.16,1,.3,1);
 }
@@ -232,7 +234,7 @@ img {
 .text-link {
   padding-bottom: 5px;
   border-bottom: 1px solid var(--ink);
-  font-size: 14.4px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -301,7 +303,7 @@ img {
   justify-content: space-between;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 10.08px;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: .15em;
 }
@@ -405,7 +407,7 @@ img {
 
 .principle-number {
   color: var(--muted);
-  font-size: 10.08px;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: .15em;
 }
@@ -531,8 +533,8 @@ img {
 }
 
 .category-nav a:hover {
-  padding-left: 21px;
-  background: var(--orange);
+  padding-left: 30px;
+  background: var(--orange-strong);
   color: var(--white);
 }
 
@@ -677,16 +679,16 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--orange);
+  background: var(--orange-strong);
   color: var(--white);
 }
 
 .image-break-copy > span {
   margin-bottom: 55px;
-  font-size: 10.08px;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: .16em;
-  opacity: .7;
+  opacity: .9;
 }
 
 .image-break-copy h2 {
@@ -705,9 +707,8 @@ img {
 .image-break-copy p {
   max-width: 330px;
   margin: 32px 0 0;
-  font-size: 14.4px;
+  font-size: 18px;
   line-height: 1.75;
-  opacity: .78;
 }
 
 .care-break {
@@ -850,7 +851,7 @@ img {
   display: block;
   margin-bottom: 17px;
   color: var(--blue-deep);
-  font-size: 10.08px;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: .15em;
 }
@@ -868,7 +869,7 @@ img {
   padding: 90px var(--pad);
   display: flex;
   align-items: center;
-  background: var(--orange);
+  background: var(--orange-strong);
   color: var(--white);
   overflow: hidden;
 }
@@ -904,7 +905,7 @@ img {
 
 .booking-content .kicker {
   color: var(--white);
-  opacity: .7;
+  opacity: .9;
 }
 
 .booking-content h2 span {
@@ -916,7 +917,6 @@ img {
   margin: 35px 0;
   font-size: 20.16px;
   line-height: 1.7;
-  opacity: .8;
 }
 
 .booking-button {
@@ -1042,7 +1042,7 @@ footer p {
   }
 
   .brand img {
-    height: 74px;
+    height: 56px;
   }
 
   .book-button {
@@ -1093,8 +1093,9 @@ footer p {
   }
 
   .hero-foot {
-    gap: 15px;
-    font-size: 7.92px;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    font-size: 10px;
   }
 
   .brand-story {

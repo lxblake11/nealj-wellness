@@ -1,3 +1,4 @@
+cat > script.js << 'EOF'
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 /* Reveal on scroll */
@@ -104,3 +105,4 @@ window.addEventListener("resize", () => {
 
 updateParallax();
 updateCategoryNav();
+EOF
