@@ -1046,7 +1046,9 @@ footer p {
   }
 
   .book-button {
-    padding: 11px 14px;
+    padding: 9px 13px;
+    font-size: 15.5px;
+    line-height: 1.2;
   }
 
   .hero {
@@ -1058,7 +1060,9 @@ footer p {
   }
 
   .hero h1 {
-    font-size: 24.48vw;
+    font-size: clamp(58px, 16.5vw, 82px);
+    line-height: .91;
+    letter-spacing: -.06em;
   }
 
   .hero-actions {
@@ -1159,6 +1163,39 @@ footer p {
   .category-nav a {
     min-width: max-content;
     padding: 17px 20px;
+  }
+
+  /* Mobile sticky treatment navigation */
+  .category-nav.is-sticky {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .category-nav.is-sticky a {
+    min-width: 0;
+    padding: 14px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: clamp(9px, 2.55vw, 12px);
+    line-height: 1.15;
+  }
+
+  .category-nav.is-sticky span {
+    margin-right: 0;
+    font-size: clamp(8px, 2vw, 10px);
+    line-height: 1;
+  }
+
+  .category-nav.is-sticky a:hover {
+    padding-left: 4px;
   }
 
   .category-header {
