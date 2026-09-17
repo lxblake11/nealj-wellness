@@ -27,7 +27,47 @@
   </nav>
 
   <a href="#book" class="book-button">Book a treatment</a>
+
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+    <span></span>
+    <span></span>
+  </button>
 </header>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-orb orb-orange" aria-hidden="true"></div>
+  <div class="mobile-menu-orb orb-blue" aria-hidden="true"></div>
+
+  <div class="mobile-menu-top">
+    <span class="kicker">NEAL J WELLNESS</span>
+    <button class="menu-close" type="button" aria-label="Close menu">&times;</button>
+  </div>
+
+  <nav class="mobile-menu-primary" aria-label="Mobile navigation">
+    <a href="#about" class="stagger" style="--i:0"><span>01</span>About<em>&rarr;</em></a>
+    <a href="#treatments" class="stagger" style="--i:1"><span>02</span>Treatments<em>&rarr;</em></a>
+    <a href="#visit" class="stagger" style="--i:2"><span>03</span>Visit<em>&rarr;</em></a>
+  </nav>
+
+  <span class="mobile-menu-label stagger" style="--i:3">FIND YOUR TREATMENT</span>
+
+  <nav class="mobile-menu-categories" aria-label="Treatment categories">
+    <a href="#massage" class="stagger" style="--i:4"><span class="dot dot-orange"></span>Massage</a>
+    <a href="#facials" class="stagger" style="--i:5"><span class="dot dot-blue"></span>Facials</a>
+    <a href="#body" class="stagger" style="--i:6"><span class="dot dot-orange"></span>Body</a>
+    <a href="#hands-feet" class="stagger" style="--i:7"><span class="dot dot-blue"></span>Hands &amp; Feet</a>
+    <a href="#express" class="stagger wide" style="--i:8"><span class="dot dot-split"></span>Express &middot; 30 min</a>
+  </nav>
+
+  <a href="#book" class="mobile-menu-book stagger" style="--i:9">
+    <span>Book a treatment</span>
+    <span class="book-arrow">&nearr;</span>
+  </a>
+
+  <p class="mobile-menu-hours stagger" style="--i:10">
+    Mon&ndash;Fri 09:00&ndash;18:00 &middot; Sat 09:00&ndash;16:00
+  </p>
+</div>
 
 <main>
 
@@ -82,11 +122,6 @@
 
   </div>
 
-  <div class="hero-foot reveal">
-    <span>23 TREATMENTS</span>
-    <span>5 CATEGORIES</span>
-    <span>PRICES ALWAYS VISIBLE</span>
-  </div>
 
 </section>
 
