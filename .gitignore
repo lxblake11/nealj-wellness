@@ -1,1 +1,3 @@
 .vercel
+MEGACHUNK_*.txt
+heredoc-parser.sh
