@@ -1,0 +1,253 @@
+/* ==========================================================
+   Nealj Wellness: treatments + content layer (v1.2)
+   Loaded after styles.css and overrides where needed.
+   ========================================================== */
+
+/* Category nav: 4 categories */
+.category-nav {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Services: name + description | options column */
+.service {
+  grid-template-columns: 1fr minmax(260px, 340px);
+  gap: 40px;
+  align-items: center;
+}
+
+.service p {
+  max-width: 540px;
+  line-height: 1.55;
+}
+
+.service-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-options li {
+  padding: 6px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-options li + li {
+  border-top: 1px dashed var(--line);
+}
+
+.service-options span {
+  color: var(--muted);
+  font-size: 17.28px;
+}
+
+.service-options strong {
+  font-size: 24.48px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.service-options .addon span::before {
+  content: "+ ";
+  color: var(--orange-strong);
+}
+
+.service-options .addon strong {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.service-options .on-request {
+  color: var(--orange-strong);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Waxing: grouped cards */
+.wax-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.wax-group {
+  padding: 30px 28px 18px;
+  background: var(--offwhite);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+}
+
+.wax-group h3 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+
+.wax-group h3 small {
+  margin-left: 8px;
+  color: var(--blue-deep);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.wax-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wax-group li {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 17.28px;
+}
+
+.wax-group li strong {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Mani & Pedi: two-price table */
+.nail-table {
+  border-top: 1px solid var(--line);
+}
+
+.nail-row {
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 1fr 120px 120px;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.nail-head {
+  padding: 16px 0;
+  color: var(--blue-deep);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .15em;
+}
+
+.nail-head span:not(:first-child),
+.nail-row strong {
+  text-align: right;
+}
+
+.nail-row h3 {
+  margin: 0;
+  font-size: clamp(19px, 1.8vw, 27px);
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+
+.nail-row p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 17.28px;
+}
+
+.nail-row strong {
+  font-size: 24.48px;
+  font-weight: 500;
+}
+
+/* About: therapist credential */
+.story-copy .story-credential {
+  margin: 30px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.story-credential strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/* Visit: contact links */
+.visit-block p a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  transition: border-color 250ms ease;
+}
+
+.visit-block p a:hover {
+  border-color: var(--orange-strong);
+}
+
+.visit-link {
+  display: inline-block;
+  color: var(--orange-strong);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .wax-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .category-nav.is-sticky {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .service {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-options strong {
+    font-size: 20px;
+  }
+
+  .wax-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nail-row {
+    grid-template-columns: 1fr 72px 72px;
+    gap: 10px;
+  }
+
+  .nail-row strong {
+    font-size: 19px;
+  }
+}
+
+/* Booking section: slightly larger text */
+.booking-content .kicker {
+  font-size: 16.5px;
+}
+
+.booking-content p {
+  max-width: 440px;
+  font-size: 22.5px;
+}
+
+.booking-button {
+  width: min(100%, 460px);
+  font-size: 20.5px;
+}
+
+.booking-content .booking-hint {
+  max-width: 460px;
+  font-size: 16.5px;
+}
+

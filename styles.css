@@ -1680,3 +1680,17 @@ html.menu-open { overflow: hidden; }
   transform: rotate(-45deg);
 }
 
+/* ---------- Booking hint ---------- */
+.booking-content .booking-hint {
+  max-width: 420px;
+  margin: 18px 0 0;
+  color: var(--white);
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: .85;
+}
+
+.booking-hint strong {
+  font-weight: 600;
+}
+
