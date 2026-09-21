@@ -1,0 +1,28 @@
+/* Accessibility: skip link + visible keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -80px;
+  left: 16px;
+  z-index: 400;
+  padding: 12px 20px;
+  background: var(--ink);
+  color: var(--white);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: top 200ms ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue-deep);
+  outline-offset: 3px;
+}
+
+.booking :focus-visible,
+.image-break :focus-visible {
+  outline-color: var(--white);
+}
